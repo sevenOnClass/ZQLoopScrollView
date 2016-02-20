@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ZQLoopScrollView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "简单易用的 app 必备的图片轮播器组件,一行代码解决"
 
   s.description  = <<-DESC
@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "sevenOnClass" => "zhuangqi_888@126.com" }
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/sevenOnClass/ZQLoopScrollView.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/sevenOnClass/ZQLoopScrollView.git", :tag => s.version }
 
   s.source_files  = "ZQLoopScrollViewDemo/ZQLoopScrollView/ZQLoopScrollView/*.{h,m}"
-
-  s.dependency "AFNetworking", "~> 2.5.2"
+  s.requires_arc = true
+  s.dependency "AFNetworking", "~> 2.6.3"
 
 end
