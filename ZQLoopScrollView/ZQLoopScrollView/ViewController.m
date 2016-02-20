@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZQLoopScrollView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *url = @"http://img0.imgtn.bdimg.com/it/u=1070902365,2619384777&fm=206&gp=0.jpg";
+    NSArray *images = @[@"h1.jpg",
+                        [UIImage imageNamed:@"h2.jpg"],
+                        [UIImage imageNamed:@"h3.jpg"],
+                        url
+                        ];
+    NSArray *titles = @[@"Thank you for your support!",
+                        @"Contact me if any quetion.",
+                        @"Thank you again.",
+                        @"Have fun"
+                        ];
+    
+    ZQLoopScrollView *loop = [ZQLoopScrollView loopScrollViewWithFrame:CGRectMake(0, 40, 375, 150) imageUrls:images];
+
+    loop.timeInterval = 10;
+    loop.placeholder = [UIImage imageNamed:@"h1.jpg"];
+    __weak __typeof(loop) weakLoop = loop;
+    loop.didSelectItemBlock = ^(NSInteger atIndex, ZQLoadImageView *sender){
+        NSLog(@"clicked item at index: %ld", atIndex);
+        [weakLoop pauseTimer];
+    };
+    loop.didScrollBlock= ^(NSInteger atIndex, ZQLoadImageView *sender) {
+        NSLog(@"scroll to index: %ld", atIndex);
+    };
+    loop.alignment = kPageControlAlignRight;
+    loop.adTitles = titles;
+    
+    [self.view addSubview:loop];
+    
+    ZQLoopScrollView *loop1 = [ZQLoopScrollView loopScrollViewWithFrame:CGRectMake(0, loop.zq_bottomY + 100, 320, 120) imageUrls:images timeInterval:10.0 didSelect:^(NSInteger atIndex, ZQLoadImageView *sender) {
+        //    NSLog(@"clicked item at index: %ld", (long)atIndex);
+        
+        [loop startTimer];
+    } didScroll:^(NSInteger toIndex, ZQLoadImageView *sender) {
+        //    NSLog(@"scroll to index: %ld", (long)toIndex);
+    }];
+    
+    
+    [self.view addSubview:loop1];
+    
 }
 
 - (void)didReceiveMemoryWarning {

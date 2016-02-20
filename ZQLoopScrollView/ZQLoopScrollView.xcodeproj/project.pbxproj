@@ -10,9 +10,16 @@
 		142A59FA1C75FDF80059BCE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A59F91C75FDF80059BCE0 /* main.m */; };
 		142A59FD1C75FDF80059BCE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A59FC1C75FDF80059BCE0 /* AppDelegate.m */; };
 		142A5A001C75FDF80059BCE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A59FF1C75FDF80059BCE0 /* ViewController.m */; };
-		142A5A031C75FDF80059BCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142A5A011C75FDF80059BCE0 /* Main.storyboard */; };
 		142A5A051C75FDF80059BCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142A5A041C75FDF80059BCE0 /* Assets.xcassets */; };
 		142A5A081C75FDF80059BCE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142A5A061C75FDF80059BCE0 /* LaunchScreen.storyboard */; };
+		149AF9171C760E1700AE30E5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 149AF9161C760E1700AE30E5 /* UIView+Extension.m */; };
+		14D8924E1C780F9C00DA3448 /* ZQLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D8924D1C780F9C00DA3448 /* ZQLoopScrollView.m */; };
+		14D892511C78304700DA3448 /* ZQLoadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D892501C78304700DA3448 /* ZQLoadImageView.m */; };
+		14D892541C78328200DA3448 /* ZQPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D892531C78328200DA3448 /* ZQPageControl.m */; };
+		14FD81691C7601F70081D2F2 /* h1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14FD81651C7601F70081D2F2 /* h1.jpg */; };
+		14FD816A1C7601F70081D2F2 /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14FD81661C7601F70081D2F2 /* h2.jpg */; };
+		14FD816B1C7601F70081D2F2 /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14FD81671C7601F70081D2F2 /* h3.jpg */; };
+		14FD816C1C7601F70081D2F2 /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14FD81681C7601F70081D2F2 /* h4.jpg */; };
 		90CC282FAD43AE2D88544148 /* libPods-ZQLoopScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F181594F5F6718140BAB89 /* libPods-ZQLoopScrollView.a */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +31,21 @@
 		142A59FC1C75FDF80059BCE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		142A59FE1C75FDF80059BCE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		142A59FF1C75FDF80059BCE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		142A5A021C75FDF80059BCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142A5A041C75FDF80059BCE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142A5A071C75FDF80059BCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142A5A091C75FDF80059BCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		149AF9151C760E1700AE30E5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		149AF9161C760E1700AE30E5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		14D8924C1C780F9C00DA3448 /* ZQLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQLoopScrollView.h; sourceTree = "<group>"; };
+		14D8924D1C780F9C00DA3448 /* ZQLoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQLoopScrollView.m; sourceTree = "<group>"; };
+		14D8924F1C78304700DA3448 /* ZQLoadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQLoadImageView.h; sourceTree = "<group>"; };
+		14D892501C78304700DA3448 /* ZQLoadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQLoadImageView.m; sourceTree = "<group>"; };
+		14D892521C78328200DA3448 /* ZQPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQPageControl.h; sourceTree = "<group>"; };
+		14D892531C78328200DA3448 /* ZQPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQPageControl.m; sourceTree = "<group>"; };
+		14FD81651C7601F70081D2F2 /* h1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h1.jpg; sourceTree = "<group>"; };
+		14FD81661C7601F70081D2F2 /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
+		14FD81671C7601F70081D2F2 /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
+		14FD81681C7601F70081D2F2 /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
 		1BC32D4FC02ED904163F5FED /* Pods-ZQLoopScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQLoopScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZQLoopScrollView/Pods-ZQLoopScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 		934427FF129EBCA9D3EA1921 /* Pods-ZQLoopScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQLoopScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQLoopScrollView/Pods-ZQLoopScrollView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,11 +83,11 @@
 		142A59F71C75FDF80059BCE0 /* ZQLoopScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				14FD81641C7601D50081D2F2 /* ZQLoopScrollView */,
 				142A59FB1C75FDF80059BCE0 /* AppDelegate.h */,
 				142A59FC1C75FDF80059BCE0 /* AppDelegate.m */,
 				142A59FE1C75FDF80059BCE0 /* ViewController.h */,
 				142A59FF1C75FDF80059BCE0 /* ViewController.m */,
-				142A5A011C75FDF80059BCE0 /* Main.storyboard */,
 				142A5A041C75FDF80059BCE0 /* Assets.xcassets */,
 				142A5A061C75FDF80059BCE0 /* LaunchScreen.storyboard */,
 				142A5A091C75FDF80059BCE0 /* Info.plist */,
@@ -81,9 +99,28 @@
 		142A59F81C75FDF80059BCE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14FD81651C7601F70081D2F2 /* h1.jpg */,
+				14FD81661C7601F70081D2F2 /* h2.jpg */,
+				14FD81671C7601F70081D2F2 /* h3.jpg */,
+				14FD81681C7601F70081D2F2 /* h4.jpg */,
 				142A59F91C75FDF80059BCE0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14FD81641C7601D50081D2F2 /* ZQLoopScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				149AF9151C760E1700AE30E5 /* UIView+Extension.h */,
+				149AF9161C760E1700AE30E5 /* UIView+Extension.m */,
+				14D8924C1C780F9C00DA3448 /* ZQLoopScrollView.h */,
+				14D8924D1C780F9C00DA3448 /* ZQLoopScrollView.m */,
+				14D8924F1C78304700DA3448 /* ZQLoadImageView.h */,
+				14D892501C78304700DA3448 /* ZQLoadImageView.m */,
+				14D892521C78328200DA3448 /* ZQPageControl.h */,
+				14D892531C78328200DA3448 /* ZQPageControl.m */,
+			);
+			path = ZQLoopScrollView;
 			sourceTree = "<group>";
 		};
 		16AFD0DE00BB63A3CF0349CC /* Pods */ = {
@@ -164,9 +201,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FD816A1C7601F70081D2F2 /* h2.jpg in Resources */,
 				142A5A081C75FDF80059BCE0 /* LaunchScreen.storyboard in Resources */,
+				14FD816B1C7601F70081D2F2 /* h3.jpg in Resources */,
 				142A5A051C75FDF80059BCE0 /* Assets.xcassets in Resources */,
-				142A5A031C75FDF80059BCE0 /* Main.storyboard in Resources */,
+				14FD816C1C7601F70081D2F2 /* h4.jpg in Resources */,
+				14FD81691C7601F70081D2F2 /* h1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,22 +266,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				142A5A001C75FDF80059BCE0 /* ViewController.m in Sources */,
+				14D892511C78304700DA3448 /* ZQLoadImageView.m in Sources */,
 				142A59FD1C75FDF80059BCE0 /* AppDelegate.m in Sources */,
+				14D8924E1C780F9C00DA3448 /* ZQLoopScrollView.m in Sources */,
+				149AF9171C760E1700AE30E5 /* UIView+Extension.m in Sources */,
 				142A59FA1C75FDF80059BCE0 /* main.m in Sources */,
+				14D892541C78328200DA3448 /* ZQPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		142A5A011C75FDF80059BCE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				142A5A021C75FDF80059BCE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		142A5A061C75FDF80059BCE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
