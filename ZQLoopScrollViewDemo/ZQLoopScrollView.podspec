@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/sevenOnClass/ZQLoopScrollView"
   s.license      = "MIT"
   s.author       = { "sevenOnClass" => "zhuangqi_888@126.com" }
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/sevenOnClass/ZQLoopScrollView.git", :tag => s.version }
 
   s.source_files  = "ZQLoopScrollViewDemo/ZQLoopScrollView/ZQLoopScrollView/*.{h,m}"
