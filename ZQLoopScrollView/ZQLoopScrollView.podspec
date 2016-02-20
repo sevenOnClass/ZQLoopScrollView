@@ -8,18 +8,17 @@ Pod::Spec.new do |s|
   s.summary      = "简单易用的 app 必备的图片轮播器组件,一行代码解决"
 
   s.description  = <<-DESC
+                    A easy and convient cycle photo part.
                    DESC
 
   s.homepage     = "https://github.com/sevenOnClass/ZQLoopScrollView"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   s.license      = "MIT"
   s.author       = { "sevenOnClass" => "zhuangqi_888@126.com" }
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/sevenOnClass/ZQLoopScrollView.git", :commit => "377429c" }
+  s.source       = { :git => "https://github.com/sevenOnClass/ZQLoopScrollView.git", :tag => "0.0.2" }
 
-  s.source_files  = "ZQLoopScrollView/ZQLoopScrollview/*"
+  s.source_files  = "ZQLoopScrollView/ZQLoopScrollview/ZQLoopScrollview/*.{h,m}"
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "AFNetworking", "~> 2.5.2"
 
 end
