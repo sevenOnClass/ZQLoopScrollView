@@ -99,6 +99,17 @@ NSString *const kCellIdentifier = @"ReuseCellIdentifier";
     }
 }
 
+- (void)setPageControlTintColor:(UIColor *)color {
+    if (self.pageControl) {
+        self.pageControl.pageIndicatorTintColor = color;
+    }
+}
+
+- (void)setCurrentPageIndicatorTintColor:(UIColor *)color{
+    if (self.pageControl) {
+        self.pageControl.currentPageIndicatorTintColor = color;
+    }
+}
 - (ZQPageControl *)pageControl {
     return _pageControl;
 }
@@ -173,7 +184,6 @@ NSString *const kCellIdentifier = @"ReuseCellIdentifier";
         [self addSubview:self.pageControl];
         self.pageControlEnabled = YES;
     }
-    
     [self bringSubviewToFront:self.pageControl];
     self.pageControl.numberOfPages = self.imageUrls.count;
     CGSize size = [self.pageControl sizeForNumberOfPages:self.imageUrls.count];

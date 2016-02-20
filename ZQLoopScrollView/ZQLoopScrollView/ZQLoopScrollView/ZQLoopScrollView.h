@@ -125,4 +125,15 @@ loopScrollViewWithFrame:(CGRect)frame
  *  the timer again when the view appear.
  */
 - (void)startTimer;
+
+/**
+ * Set the color of pageControl tintColor.
+ *
+ */
+-(void)setPageControlTintColor:(UIColor *)color;
+/**
+ * Set the color of current pageControl tintColor.
+ *
+ */
+-(void)setCurrentPageIndicatorTintColor:(UIColor *)color;
 @end

@@ -47,13 +47,15 @@
     
     [self.view addSubview:loop];
     
-    ZQLoopScrollView *loop1 = [ZQLoopScrollView loopScrollViewWithFrame:CGRectMake(0, loop.zq_bottomY + 100, 320, 120) imageUrls:images timeInterval:10.0 didSelect:^(NSInteger atIndex, ZQLoadImageView *sender) {
+    ZQLoopScrollView *loop1 = [ZQLoopScrollView loopScrollViewWithFrame:CGRectMake(0, loop.zq_bottomY + 100, 375, 120) imageUrls:images timeInterval:10.0 didSelect:^(NSInteger atIndex, ZQLoadImageView *sender) {
         //    NSLog(@"clicked item at index: %ld", (long)atIndex);
         
         [loop startTimer];
     } didScroll:^(NSInteger toIndex, ZQLoadImageView *sender) {
         //    NSLog(@"scroll to index: %ld", (long)toIndex);
     }];
+    [loop1 setCurrentPageIndicatorTintColor:[UIColor colorWithRed:51.0/255 green:204.0/255 blue:204.0/255 alpha:1]];
+    [loop1 setPageControlTintColor:[UIColor whiteColor]];
     
     
     [self.view addSubview:loop1];
