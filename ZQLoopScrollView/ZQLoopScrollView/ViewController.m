@@ -32,7 +32,7 @@
     
     ZQLoopScrollView *loop = [ZQLoopScrollView loopScrollViewWithFrame:CGRectMake(0, 40, 375, 150) imageUrls:images];
 
-    loop.timeInterval = 10;
+    loop.timeInterval = 2;
     loop.placeholder = [UIImage imageNamed:@"h1.jpg"];
     __weak __typeof(loop) weakLoop = loop;
     loop.didSelectItemBlock = ^(NSInteger atIndex, ZQLoadImageView *sender){
